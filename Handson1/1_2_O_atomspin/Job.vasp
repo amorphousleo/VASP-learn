@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+#PBS -e ./
+#PBS -o ./
+#PBS -N VASP_examples 
+#PBS -A mat020
+#PBS -l nodes=1
+#PBS -l walltime=00:30:00
+#PBS -e job.$PBS_JOBID.err
+#PBS -o job.$PBS_JOBID.out
+
+OMP_NUM_THREADS=1
+
+cd /lustre/atlas/scratch/lzella/mat020/VASP/Handson1/1_1_O_atom/
+
+module load vasp5
+
+aprun -n 16 vasp5

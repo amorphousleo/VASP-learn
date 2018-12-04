@@ -1,0 +1,47 @@
+ running on   16 total cores
+ distrk:  each k-point on   16 cores,    1 groups
+ distr:  one band on    1 cores,   16 groups
+ using from now: INCAR     
+ vasp.5.4.1 24Jun15 (build Apr 04 2016 10:44:54) complex                        
+  
+ POSCAR found :  1 types and       1 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default, NPAR=number of cores might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ WARNING: small aliasing (wrap around) errors must be expected
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+DAV:   1     0.360245491656E+02    0.36025E+02   -0.99129E+02    32   0.147E+02
+DAV:   2     0.244124133493E+00   -0.35780E+02   -0.35711E+02    64   0.252E+01
+DAV:   3    -0.311353380381E+00   -0.55548E+00   -0.52447E+00    32   0.687E+00
+DAV:   4    -0.313520326860E+00   -0.21669E-02   -0.21664E-02    64   0.492E-01
+DAV:   5    -0.313520402260E+00   -0.75400E-07   -0.75243E-07    48   0.274E-03    0.286E-01
+DAV:   6    -0.314540548533E+00   -0.10201E-02   -0.17884E-03    32   0.166E-01    0.142E-01
+DAV:   7    -0.314637140147E+00   -0.96592E-04   -0.22496E-04    32   0.671E-02
+   1 F= -.31463714E+00 E0= -.16037482E+00  d E =-.308525E+00
+ writing wavefunctions
+Application 4033584 resources: utime ~90s, stime ~7s, Rss ~35352, inblocks ~36706, outblocks ~78944
